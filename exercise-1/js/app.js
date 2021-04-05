@@ -8,12 +8,15 @@
             const controller = {
                 createNewUserElement(el) {
                     listItem = document.createElement("li");
-                    // img = document.createElement("img");
+                    img = document.createElement("img");
                     nameLable = document.createElement("span");
                     idLable = document.createElement("span");
                     crateAtLable = document.createElement("span");
                     button = document.createElement("button");
-                    // img.src = el.avatar
+    
+                    listItem.className = "list-group-item"
+                    img.src = el.avatar
+                    img.className = "img"
                     idLable.textContent = el.id;
                     idLable.className = "id";
                     idLable.style.display = 'none'
@@ -23,10 +26,10 @@
                     crateAtLable.textContent = el.createdAt;
                     crateAtLable.className = "createAt";
                     crateAtLable.style.display = 'none'
-                    button.textContent = "Reveal User";
+                    button.textContent = "view";
                     button.className = "view";
 
-                    // listItem.appendChild(img);
+                    listItem.appendChild(img);
                     listItem.appendChild(idLable)
                     listItem.appendChild(nameLable)
                     listItem.appendChild(crateAtLable)
