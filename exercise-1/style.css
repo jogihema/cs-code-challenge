@@ -1,0 +1,32 @@
+html body {
+  background: #ffffff;
+  color: #333;
+  font-family: sans-serif;
+}
+html body .container {
+  display: block;
+}
+html body li * {
+  float: left;
+}
+
+html body li {
+  clear: both;
+  list-style: none;
+}
+
+html body button {
+  background: none;
+  border: 0px;
+  color: #888888;
+  font-size: 15px;
+  width: 100px;
+  margin: 10px 0 0;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+}
+
+div span{
+  display: inline-block;
+  padding: 10px;
+}
