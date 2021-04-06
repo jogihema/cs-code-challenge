@@ -1,3 +1,6 @@
+$edit-color: #008CBA;
+$delete-color: #f44336;
+
 html body {
   background: #ffffff;
   color: #333;
@@ -25,25 +28,37 @@ html body {
     list-style: none;
   }
 
-  h3 {
-    clear: both;
-    list-style: none;
-  }
-
   input {
     outline: none;
   }
 
-  button {
+  .edit {
     outline: none;
-    background: none;
-    border: 0px;
-    color: #888888;
+    background-color: $edit-color;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
     font-size: 15px;
-    width: 60px;
-    margin: 10px 0 0;
+    width: 50px;
+    padding: 5px;
+    margin: 5px 0 0 10px;
     font-family: Lato, sans-serif;
     cursor: pointer;
+
+    :hover {
+      color: #333;
+    }
+  }
+  .delete {
+    outline: none;
+    background-color: $delete-color;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 60px;
+    padding: 5px;
+    margin: 5px 0 0 10px;
+    font-family: Lato, sans-serif;
 
     :hover {
       color: #333;

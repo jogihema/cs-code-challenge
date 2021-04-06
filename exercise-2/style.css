@@ -29,28 +29,41 @@ html body li * {
   float: left;
 }
 
-html body h3 {
-  clear: both;
-  list-style: none;
-}
-
 html body input {
   outline: none;
 }
 
-html body button {
+html body .edit {
   outline: none;
-  background: none;
-  border: 0px;
-  color: #888888;
+  background-color: #008CBA;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
   font-size: 15px;
-  width: 60px;
-  margin: 10px 0 0;
+  width: 50px;
+  padding: 5px;
+  margin: 5px 0 0 10px;
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
 
-html body button :hover {
+html body .edit :hover {
+  color: #333;
+}
+
+html body .delete {
+  outline: none;
+  background-color: #f44336;
+  color: white;
+  border-radius: 5px;
+  font-size: 15px;
+  width: 60px;
+  padding: 5px;
+  margin: 5px 0 0 10px;
+  font-family: Lato, sans-serif;
+}
+
+html body .delete :hover {
   color: #333;
 }
 
